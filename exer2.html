@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>Exercício - 02</title>
+    <style>
+        .container {
+            display: grid;
+            width: 600px;
+            height: 200px;
+            grid-template-areas: 
+            "A A B"
+            "C D B";
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+
+        .container div {
+            padding: 10px;
+            background-color: darkslategray;
+            color: white;
+            font-size: 25px;
+            border-radius: 10px;
+        }
+
+        .A {
+            grid-area: A;
+        }
+
+        .B {
+            grid-area: B;
+        }
+
+        .C {
+            grid-area: C;
+        }
+
+        .D {
+            grid-area: D;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="A">A</div><div class="B">B</div>
+        <div class="C">C</div><div class="D">D</div>
+    </div>
+</body>
+</html>

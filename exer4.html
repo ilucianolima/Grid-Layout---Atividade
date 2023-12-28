@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <title>Exercício - 04</title>
+    <style>
+        .container {
+            display: grid;
+            width: 600px;
+            height: 200px;
+            grid-template-areas: 
+            "A A B B"
+            "C C D D"
+            "C C D D"
+            "C C D D";
+            column-gap: 10px;
+            row-gap: 10px;
+            padding: 10px;
+        }
+
+        .container div{
+            background-color: darkslategray;
+            padding: 10px;
+            color: white;
+            font-size: 20px;
+            border-radius: 10px;
+            
+        }
+
+        .D div{
+            background-color: gray;
+            color: black;
+            border-radius: 10px;
+        }
+
+        .A {
+            grid-area: A;
+        }
+        .B {
+            grid-area: B;
+        }
+        .C {
+            grid-area: C;
+        }
+        .D {
+            display: grid;
+            grid-area: D;
+            grid-template-areas: 
+            "E E"
+            "F G";
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+        .E {
+            grid-area: E;
+        }
+        .F {
+            grid-area: F;
+        }
+        .G {
+            grid-area: G;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="A">A</div>
+        <div class="B">B</div>
+        <div class="C">C</div>
+        <div class="D">
+            <div class="E">E</div>
+            <div class="F">F</div>
+            <div class="G">G</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <title>Exercício - 03</title>
+    <style>
+        .container {
+            display: grid;
+            width: 600px;
+            height: 200px;
+            grid-template-areas:
+            "A D G J"
+            "B E H K"
+            "C F I L";
+            column-gap: 10px;
+            row-gap: 10px;
+            padding: 10px;
+        }
+
+        .container div{
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .A {
+            grid-area: A;
+        }
+        .B {
+            grid-area: B;
+        }
+        .C {
+            grid-area: C;
+        }
+        .D {
+            grid-area: D;
+        }
+        .E {
+            grid-area: E;
+        }
+        .F {
+            grid-area: F;
+        }
+        .G {
+            grid-area: G;
+        }
+        .H {
+            grid-area: H;
+        }
+        .I {
+            grid-area: I;
+        }
+        .J {
+            grid-area: J;
+        }
+        .K {
+            grid-area: K;
+        }
+        .L {
+            grid-area: L;
+        }
+
+        .A,
+        .C,
+        .E,
+        .G,
+        .I,
+        .K {
+            background-color: darkslategray;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+        } 
+
+        .B,
+        .D,
+        .F,
+        .H,
+        .J,
+        .L {
+            background-color: gray;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="A">1</div>
+        <div class="B">2</div>
+        <div class="C">3</div>
+        <div class="D">4</div>
+        <div class="E">5</div>
+        <div class="F">6</div>
+        <div class="G">7</div>
+        <div class="H">8</div>
+        <div class="I">9</div>
+        <div class="J">10</div>
+        <div class="K">11</div>
+        <div class="L">12</div>
+    </div>
+</body>
+</html>
